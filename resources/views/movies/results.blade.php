@@ -14,9 +14,11 @@
         <ul>
             @foreach ($movies as $movie)
                 <li>
-                    <strong>{{ $movie['Title'] }}</strong> ({{ $movie['Year'] }})
-                    <br>
-                    <img src="{{ $movie['Poster'] }}" alt="Poster" width="100">
+                    <a href="{{ route('movies.details', ['id' => $movie['imdbID']]) }}">
+                        <strong>{{ $movie['Title'] }}</strong> ({{ $movie['Year'] }})
+                        <br>
+                        <img src="{{ $movie['Poster'] }}" alt="Poster" width="100">
+                    </a>
                 </li>
             @endforeach
         </ul>

@@ -9,3 +9,5 @@ Route::get('/', function () {
 
 Route::get('/movies/search', [MovieController::class, 'index'])->name('movies.search');
 Route::post('/movies/search', [MovieController::class, 'search'])->name('movies.search.results');
+
+Route::get('movies/{id}', [MovieController::class, 'details'])->name('movies.details');
