@@ -26,8 +26,6 @@ class MovieController extends Controller
         $title = $request->input('title');
         $apiKey = env('OMDB_API_KEY');
 
-        dd($apiKey);
-
         try{
             $response = Http::get('http://www.omdbapi.com/', [
                 'apiKey' => $apiKey,
@@ -100,7 +98,6 @@ class MovieController extends Controller
                         'page' => $page,
                     ]);
 
-                    //dd($response->json());
                     $movies = $response->json();
 
                     if (!isset($movies['Search'])) {
