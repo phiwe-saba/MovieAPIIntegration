@@ -32,7 +32,7 @@ Enter the name of the movie you want to see and the results will appear
 ![image](https://github.com/user-attachments/assets/36934569-f730-4afd-a5dc-4c9ac71eac23)
 
 View Movie Details:
-- To view specific details for a movie click on the movie name and the details will appear
+To view specific details for a movie click on the movie name and the details will appear
 ![image](https://github.com/user-attachments/assets/7b082da3-939d-4dc1-ad13-6cc167892103)
 
 View Trending Movies:
@@ -47,26 +47,26 @@ These endpoint can be tested on Postman or it can be tested on the terminal.
 
 1. Search Movies: 
 
-POSTMAN:
+- POSTMAN:
 ![image](https://github.com/user-attachments/assets/1f5ebc2e-9b96-48d2-adb1-0159ff19dfde)
 
-TERMINAL:
+- TERMINAL:
 ![image](https://github.com/user-attachments/assets/c4ed2ad6-23d4-45a0-b5e4-2bd7f2350a0b)
 
 2. Movie Details:
 
-POSTMAN:
+- POSTMAN:
 ![image](https://github.com/user-attachments/assets/10cf0b12-82b9-43bf-9795-3e3d3b22acee)
 
-TERMINAL:
+- TERMINAL:
 ![image](https://github.com/user-attachments/assets/1efc0c96-4e7e-487d-bc5b-136297189290)
 
 3. Trending Movies:
 
-POSTMAN
+- POSTMAN
 ![image](https://github.com/user-attachments/assets/5fa1ba15-c1a1-4d8c-a65d-a979c8559113)
 
-TERMINAL:
+- TERMINAL:
 ![image](https://github.com/user-attachments/assets/0e0a06c0-12b8-42b6-8c8b-fcf09bee85f9)
 
 ## UNIT Testing
