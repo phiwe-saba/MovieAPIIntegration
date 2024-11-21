@@ -48,19 +48,35 @@ These endpoint can be tested on Postman or it can be tested on the terminal.
 1. Search Movies: 
 
 POSTMAN:
+![image](https://github.com/user-attachments/assets/1f5ebc2e-9b96-48d2-adb1-0159ff19dfde)
 
 TERMINAL:
-
+![image](https://github.com/user-attachments/assets/c4ed2ad6-23d4-45a0-b5e4-2bd7f2350a0b)
 
 2. Movie Details:
 
+POSTMAN:
+![image](https://github.com/user-attachments/assets/10cf0b12-82b9-43bf-9795-3e3d3b22acee)
+
+TERMINAL:
+![image](https://github.com/user-attachments/assets/1efc0c96-4e7e-487d-bc5b-136297189290)
+
 3. Trending Movies:
+
+POSTMAN
+![image](https://github.com/user-attachments/assets/5fa1ba15-c1a1-4d8c-a65d-a979c8559113)
+
+TERMINAL:
+![image](https://github.com/user-attachments/assets/0e0a06c0-12b8-42b6-8c8b-fcf09bee85f9)
 
 ## UNIT Testing
 
 For unit testing we use PHPUnit and to run the tests run the following command on the terminal
+![image](https://github.com/user-attachments/assets/87aac6ee-ab03-479b-b7bd-0ce45a794ec0)
 
-These are results after running the command
+These are the results after running the command
+![image](https://github.com/user-attachments/assets/c3d83325-daf4-40f5-af5a-fe5fee020e46)
+![image](https://github.com/user-attachments/assets/4bcbdd24-c08f-4d03-9fb5-c5022e0a7539)
 
 ## Assumptions and Improvements
 
