@@ -26,6 +26,8 @@ class MovieController extends Controller
         $title = $request->input('title');
         $apiKey = env('OMDB_API_KEY');
 
+        dd($apiKey);
+
         try{
             $response = Http::get('http://www.omdbapi.com/', [
                 'apiKey' => $apiKey,

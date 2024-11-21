@@ -26,7 +26,7 @@ Application that consumes the OMDB API
 After launching the application the following page will appear.
 ![image](https://github.com/user-attachments/assets/f045161e-fd8e-462e-bc4f-2e0d280389a3)
 
-Movie Search:
+## *Movie Search:*
 Enter the name of the movie you want to see and the results will appear
 ![image](https://github.com/user-attachments/assets/cbfb8437-66c5-46cd-b035-750fd9c9fee3)
 ![image](https://github.com/user-attachments/assets/36934569-f730-4afd-a5dc-4c9ac71eac23)
@@ -43,9 +43,29 @@ Trending movies will appear.
 ![image](https://github.com/user-attachments/assets/4a79dc19-38da-483e-8d37-c58bf24d95cf)
 
 ## API Endpoints
+These endpoint can be tested on Postman or it can be tested on the terminal.
 
 1. Search Movies: 
+
+POSTMAN:
+
+TERMINAL:
+
 
 2. Movie Details:
 
 3. Trending Movies:
+
+## UNIT Testing
+
+For unit testing we use PHPUnit and to run the tests run the following command on the terminal
+
+These are results after running the command
+
+## Assumptions and Improvements
+
+1. In terms of the design to avoid duplication of code I should have created a layout page that could be implemented on all the pages instead of repeating the code for the navigation ba.
+2. The way in which the error messages are returned can be improved so that they are more clear and concise.
+3. Caching results for 60 minutes is making the application slow, this can be improved if I decrease the time to 10 minutes.
+4. Pagination design needs to be improved.
+5. For the APIs I should have authenticated them with tokens.
