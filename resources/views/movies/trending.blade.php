@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blockbuster</title>
+    <title>Trending Movies</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -25,24 +25,32 @@
         </div>
     </nav>
     <div class="container my-5">
-        <h1 class="text-center mb-4">Search for a Movie</h1>
-        <form action="{{ route('movies.search.results') }}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <div class="form-group">
-                <label for="title">Movie Title:</label>
-                <input type="text" id="title" name="title" class="form-control" required>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Search</button>
-        </form>
+        <h1 class="text-center mb-4">Trending Movies</h1>
 
-        @if ($errors->any())
-            <div class="alert alert-danger mt-3">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
+        @if (isset($error))
+            <div class="alert alert-danger">
+                <p>{{ $error }}</p>
             </div>
+        @elseif (isset($movies) && count($movies) > 0)
+            <div class="row">
+                @foreach ($movies as $movie)
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="{{ $movie['Poster'] }}" class="card-img-top" alt="Movie Poster">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $movie['Title'] }}</h5>
+                                <p class="card-text"><strong>Year:</strong> {{ $movie['Year'] }}</p>
+                                <p class="card-text"><strong>Rating:</strong> {{ $movie['imdbRating'] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+            <div class="pagination justify-content-center">
+                {{ $movies->links() }}
+            </div>
+        @else
+            <p>No trending movies available.</p>
         @endif
     </div>
 
